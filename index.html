@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
+    </script>
+    <!--
+			超大尺寸
+			min-width: 1251px
+			大尺寸
+			(min-width: 951px) and (max-width: 1250px)
+			
+		-->
+    <style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+    
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid head_box">
+        <div class="container-fluid top_bar">
+            <div class="container bar_info">
+                <h1 class="logo">
+						<a href=""><img src="img/logo.png"/></a>
+					</h1>
+                <a href="" class="nav_sel visible-md-inline-block"></a>
+                <nav class="nav_box visible-lg-inline-block">
+                    <!-- <a href="">发现</a>
+                    <a href="">文章</a>
+                    <a href="">设计师</a>
+                    <a href="">帮帮忙</a>
+                    <a href="">
+							更多
+							<span class="ico_more"></span>
+						</a> -->
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="">发现</a>
+                        </li>
+                        <li>
+                            <a href="">文章</a>
+                        </li>
+                        <li>
+                            <a href="">设计师</a>
+                        </li>
+                        <li>
+                            <a href="">帮帮忙</a>
+                        </li>
+                        <li></li>
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      更多 <span class="caret"></span>
+    </a>
+                            <ul class="dropdown-menu" S>
+                                <li><a href-="">酷站推荐</a></li>
+                                <li><a href="">资源下载</a></li>
+                                <li><a href="">网址导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="login_reg">
+                    <span class="ico_search"></span>
+                    <a href="" class="btn_login">登录</a>
+                    <a href="" class="btn_reg">注册</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid banner">
+        <div id="bannerbody">
+            <div id="b_ucode">
+                <p id="b_u_time"><span class="b_u_ti">00</span> 天<span class="b_u_split"></span><span class="b_u_ti">00</span> 时<span class="b_u_split"></span><span class="b_u_ti">00</span> 分<span class="b_u_split"></span><span class="b_u_ti">00</span> 秒</p>
+                <p id="b_u_desc" style="text-align:center">周二，抢U码！送个人网站！有码！任性！嫑钱！</p>
+                <p id="b_u_btn" class="active"><a id="b_u_url" href="http://uehtml.uemo.net" target="_blank">什么是UEMO</a><a id="b_u_get">抢U码</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid type_news">
+        <div class="container">
+            <nav class="nav_type">
+                <a href="" class="item active">
+						行业
+						<span class="ico_more"></span>
+					</a>
+                <a href="" class="item">
+                    <span class="tj"></span> 最新推荐
+                    <span class="ico_more"></span>
+                </a>
+                <a href="" class="item">
+                    <span class="cl"></span> 颜色
+                    <span class="ico_more"></span>
+                </a>
+                <a href="" class="item">
+                    <span class="owner"></span> 所有者
+                    <span class="ico_more"></span>
+                </a>
+            </nav>
+            <div class="news_list visible-lg-inline-block">
+                <span class="ico_list"></span>
+                <ul class="list_box" id="list_box">
+                    <li class="list_item">
+                        <a href="">jack_wy</a> 喜欢了
+                        <a href="">Aurora</a> 19分钟前
+                    </li>
+                    <li class="list_item">
+                        <a href="">单英</a> 喜欢了
+                        <a href="">MY GIRLS</a> 7分钟前
+                    </li>
+                    <li class="list_item">
+                        <a href="">极天风雪</a> 喜欢了
+                        <a href="">win8风格PSD源文件</a> 2小时前
+                    </li>
+                    <li class="list_item">
+                        <a href="">夏末_微寒</a> 喜欢了
+                        <a href="">5分钟教打造Siri式波浪动效</a> 1小时前
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container content">
+        <div class="big_item">
+            <div class="swiper-container" id="container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/fashion.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/be.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/china.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/gulong.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/fox.jpg" alt=""></a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next "></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+        </div>
+        <div class="item">
+            <a href=""><img src="img/uehtml.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href=""><img src="img/uemo02.png" alt=""></a>
+        </div>
+        <!---->
+        <div class="item">
+            <a href=""><img src="img/04-2.png" alt=""></a>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1495468504595.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1495439492634.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1495012556978.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1494807888126.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1493769312486_280x180.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/149295987277_280x180.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1492439488851.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <!---->
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1491872330933.jpg  " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1491794959634.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1491374149856.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1490682894888.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <!---->
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1490672041868.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1490105177257.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1490066643320.jpg  " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1494607362887.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <!---->
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1494607362887.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1494607362887.jpg " alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1490066016750.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div class="item">
+            <div class="itemtop">
+                <a href=""><img src="img/1489912509141.jpg" alt=""></a>
+            </div>
+            <div class="itemmd"></div>
+            <div class="itemfoot"></div>
+        </div>
+        <div id="pages">
+            <a href="" id="pageactive">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <span>...</span>
+            <a href="2">212</a>
+            <a href="" id="pagenext">
+                <span class="yy-icon yy-pp yy-rotate"></span>
+            </a>
+        </div>
+    </section>
+    <script src="js/swiper.min.js"></script>
+    <!-- <script src="js/swiper.jquery.min.js"></script> -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        loop: true,
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+
+    var contain = document.getElementById('container');
+    contain.onmouseover = function() {
+        swiper.stopAutoplay();
+    };
+    contain.onmouseout = function() {
+        swiper.startAutoplay();
+    }
+    var i = 0;
+    var timer = null;
+    var oUl = document.getElementById('list_box');
+    timer = setInterval(function() {
+        i++;
+        if (i == 4) {
+            i = 0;
+        }
+        oUl.style.top = -40 * i + "px";
+    }, 2000);
+    </script>
+</body>
+
+</html>
